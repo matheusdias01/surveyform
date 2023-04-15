@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head> 
+        <title>Form Survey</title>
+        <meta name="author" content="Matheus Dias">
+        <meta name="viewport" content="width=device-width scale-initial=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <meta name="description" content="Modulo III - Aplicações para Internet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>freeCodeCamp Survey Form</h1>
+            <h2>Thank you for taking the time to help us improve the platform</h2>
+        </header>
+        <main>
+            <form action="" method="post">    
+                <p>Name</p>
+                <input type="text" name="sName" id="tName" placeholder="Enter your name" size="30px">
+
+                <p>Email</p>
+                <input type="email" name="sEmail" id="tEmail" placeholder="Enter your e-mail" size="30px">
+
+                <p>Age (optional)</p>
+                <input type="number" name="sNumber" id="tNumber"  min="16" max="99" value="16" placeholder="Age" size="30px">
+
+                <p>Which option best describes your current role?</p>
+                <select name="sOption" id="tOption" required="required">
+                    <option value=""  disabled selected>Select an option</option>
+                        <optgroup label="Select an option">
+                            <option value="Student">Student</option>
+                            <option value="Full time job">Full time job</option>
+                            <option value="Full time learner">Full time learner</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                            <option value="Other">Other</option>
+                        </optgroup>
+                </select>
+
+                <p class="hbox">Would you recommend freeCodeCamp to a friend?</p>
+                <input type="radio" name="recommend" value="Definitely" class="checkbox">Definitely<br/>
+                <input type="radio" name="recommend" value="Maybe" class="checkbox">Maybe<br/>
+                <input type="radio" name="recommend" value="Not sure" class="checkbox">Not sure<br/>
+
+                <p class="hbox">What is your favorite feature of freeCodeCamp?</p>
+                <select name="favorite" id="">
+                    <option value="Select an option" selected disabled>Select an option</option>
+                    <option value="Challenges">Challenges</option>
+                    <option value="Projects">Projects</option>
+                    <option value="Community">Community</option>
+                    <option value="Open Source">Open Source</option>
+                </select>
+
+                    <p class="hbox">What would you like to see improved? (Check all that apply)</p>
+                    <input type="checkbox" name="improved" value="Front-end Projects" class="checkbox">Front-end Projects<br/>
+                    <input type="checkbox" name="improved" value="Back-end Projects" class="checkbox">Back-end Projects<br/>
+                    <input type="checkbox" name="improved" value="Data Visualization" class="checkbox">Data Visualization<br/>
+                    <input type="checkbox" name="improved" value="Challenges" class="checkbox">Challenges<br/>
+                    <input type="checkbox" name="improved" value="Open Source Community" class="checkbox">Open Source Community<br/>
+                    <input type="checkbox" name="improved" value="Gitter help rooms" class="checkbox">Gitter help rooms<br/>
+                    <input type="checkbox" name="improved" value="Videos" class="checkbox">Video<br/>
+                    <input type="checkbox" name="improved" value="City Meetups" class="checkbox">City Meetups<br/>
+                    <input type="checkbox" name="improved" value="Wiki" class="checkbox">Wiki<br/>
+                    <input type="checkbox" name="improved" value="Forum" class="checkbox">Forum<br/>
+                    <input type="checkbox" name="improved" value="Additional Courses" class="checkbox">Additional Courses<br/>
+
+                <p>Any comments or suggestions?</p>
+                <textarea name="sComment" id="tComment" cols="70" rows="10" placeholder="Enter your comment here..."></textarea> <br/>
+
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p>Reprodução feita por Matheus Dias</p><br/>
+            <a href="https://codepen.io/freeCodeCamp/full/VPaoNP" target="_blank">Conheça o site original</a>
+        </footer>
+    </body>
+</html>
