@@ -14,6 +14,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: brightness(20%);
+    background-attachment: fixed;
 }
 
 header{
